@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  padding-bottom: 10px;
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -33,7 +34,7 @@ button {
   font-size: 20px;
 }
 footer{
-  position: fixed;
+    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -63,6 +64,7 @@ p{
   margin: auto;
   padding: 20px;
   border: 1px solid;
+  border-radius: 4px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -85,4 +87,26 @@ p{
 .reset:hover {
   background-color: rgb(96, 255, 154);
   border: 2px solid rgb(5, 133, 20);
+}
+
+
+@media screen and (max-width: 500px) {
+  .Inner-element {
+    width: 80%;
+  }
+  button {
+    width: 50%;
+    font-size: 15px
+  }
+  h1 {
+    font-size: 30px;
+  }
+  p  {
+    font-size: 15px;
+    margin: 0.4em;
+  }
+  
+  footer {
+    font-size: 12px;
+  }
 }
