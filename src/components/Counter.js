@@ -19,7 +19,9 @@ class Counter extends Component {
 
   onClick = () => {
     this.setState((priorState) => {
-      return { counter: priorState.counter + 1 };
+      return {
+        counter: priorState.counter + 1,
+      };
     });
   };
 
@@ -29,15 +31,27 @@ class Counter extends Component {
       return { counter: 0 };
     });
   };
+
   render = () => {
+    let displayString;
+    if (this.state.counter > 0) displayString = "Click's";
+    else displayString = "Click";
     return (
       <div className="Inner-element">
-        <h1>Click Counter!!</h1>
-        <p>Click on bellow Counter to get Click Counts!</p>
-        <p>Clicks: {this.state.counter}</p>
-        <button onClick={this.onClick}>Click me!</button>
-        <br />
-        <button onClick={this.resetCounter}>Reset!</button>
+        <h1>Chasing the Clicks</h1>
+        <p>Click on click button to increase Click Counts!</p>
+
+        <p>
+          {displayString}: {this.state.counter}
+        </p>
+        <div className="button-container">
+          <button className="click" onClick={this.onClick}>
+            Click me!
+          </button>
+          <button className="reset" onClick={this.resetCounter}>
+            Reset!
+          </button>
+        </div>
       </div>
     );
   };
