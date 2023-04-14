@@ -3,7 +3,7 @@
 A Simple React APP to count clicks!! 
 
 
-_Live Example: https://priyankthakur-sesl1-lab1.vercel.app/
+https://priyankthakur-sesl1-lab1.vercel.app/
 
 ## Available Scripts
 
