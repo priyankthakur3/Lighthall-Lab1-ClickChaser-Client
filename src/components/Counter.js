@@ -39,7 +39,7 @@ class Counter extends Component {
     return (
       <div className="Inner-element">
         <h1>Chasing the Clicks</h1>
-        <p>Click on click button to increase Click Counts!</p>
+        <p>Hit that "Click Me" and see your Counts Soar!</p>
 
         <p>
           {displayString}: {this.state.counter}
